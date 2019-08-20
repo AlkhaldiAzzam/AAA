@@ -8,6 +8,8 @@ import StoryData from './StoryData'
 import './Home.css';
 import YouTube from './YouTube'
 import Drama from './Drama'
+import AboutUs from './AboutUs'
+
 import { Switch,Route, Link, BrowserRouter as Router } from 'react-router-dom'
 export * from "react-router";
 
@@ -16,7 +18,11 @@ let apiCallCount = 0;
 class Home extends Component {
 
   state = {
+ 
     currentIndex: 1,
+    // prevIndex:currentIndex-1,
+    nextIndex:2,
+
   scene: {}
 
 
