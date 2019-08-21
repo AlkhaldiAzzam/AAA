@@ -50,3 +50,9 @@ font-size: 18px;
 margin-top: 105px;
 margin-bottom: 55px;
 }
+a:hover{
+  text-decoration: none!important;
+
+  font-size:15px;
+  color: aliceblue !important;
+}
