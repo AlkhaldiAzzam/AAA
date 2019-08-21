@@ -56,6 +56,7 @@ class Home extends Component {
     
       const scene =  this.state.scene
       scene.right_text = 'loading'
+      scene.left_text = 'loading'
           this.setState({
             scene: scene
           
@@ -97,6 +98,7 @@ class Home extends Component {
    
     const scene =  this.state.scene
     scene.left_text = 'loading'
+    scene.right_text = 'loading'
         this.setState({
           scene: scene
         

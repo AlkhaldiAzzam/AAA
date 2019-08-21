@@ -1,9 +1,11 @@
 
 import React ,{Component} from  'react';
-import Card from 'react-bootstrap/Card';
-import CardDeck from 'react-bootstrap/CardDeck';
-import CardGroup from 'react-bootstrap/CardGroup';
-import Home from './Home';
+import Card from 'react-bootstrap/Card'
+import CardDeck from 'react-bootstrap/CardDeck'
+import CardGroup from 'react-bootstrap/CardGroup'
+import Home from './Home'
+
+
 import './AboutUs.css';
 import axios from 'axios';
 // import {BrowserHistory} from 'react-router'
@@ -25,6 +27,7 @@ class AboutUs extends Component{
 
   }
 
+
 render(){
 
 
@@ -37,7 +40,9 @@ render(){
 <div>
 
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+{/* 
+<Aduio />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/> */}
 <link
   rel="stylesheet"
   href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -74,7 +79,11 @@ render(){
       <Card.Footer>
    
  <a href="https://github.com/AlkhaldiAzzam"><i class="fa fa-github"style={{ backgroundColor: 'white', color: 'black' }}></i></a> {''}
-  <a href="#"><i class="fa fa-linkedin"></i></a> {''}
+ <a href="mailto:...@gmail.com"><i class="fa fa-envelope"style={{ backgroundColor: 'white', color: '#A4C0E4' }}></i></a> {''}
+
+
+  {/* <a href="#"><i class="fa fa-phone"style={{ backgroundColor: 'white', color: 'green' }}></i></a> {''} */}
+  <a href="https://www.linkedin.com/in/ashwagalrouguisoftwareengineer/"><i class="fa fa-linkedin"></i></a> {''}
 
   <p><div class="black">Contact</div></p>
       </Card.Footer>
@@ -82,13 +91,15 @@ render(){
     <Card>
       <Card.Img variant="top" src= {this.state.ashwaq} />
       <Card.Body>
-        <Card.Title>AShwag Alrougui</Card.Title>
+        <Card.Title>Ashwag Alrougui</Card.Title>
         <Card.Text>
       
         </Card.Text>
       </Card.Body>
       <Card.Footer>
       <a href="https://github.com/ASSROUGUI"><i class="fa fa-github"style={{ backgroundColor: 'white', color: 'black' }}></i></a> {''}
+      <a href="mailto:ashwagsaudalrougui@gmail.com"><i class="fa fa-envelope"style={{ backgroundColor: 'white', color: '#A4C0E4' }}></i></a> {''}
+  {/* <a href="#"><i class="fa fa-phone"style={{ backgroundColor: 'white', color: 'green' }}></i></a> {''} */}
   <a href="#"><i class="fa fa-linkedin"></i></a> {''}
   <p><div class="black">Contact</div></p>
       </Card.Footer>
@@ -103,6 +114,8 @@ render(){
       </Card.Body>
       <Card.Footer>
       <a href="https://github.com/aaltwaim"><i class="fa fa-github"style={{ backgroundColor: 'white', color: 'black' }}></i></a> {''}
+      <a href="mailto:...@gmail.com"><i class="fa fa-envelope"style={{ backgroundColor: 'white', color: '#A4C0E4' }}></i></a> {''}
+  {/* <a href="#"><i class="fa fa-phone"style={{ backgroundColor: 'white', color: 'green' }}></i></a> {''} */}
   <a href="#"><i class="fa fa-linkedin"></i></a> {''}
   <p><div class="black">Contact</div></p>
       </Card.Footer>
