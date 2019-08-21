@@ -1,24 +1,18 @@
-
 import React ,{Component} from  'react';
 import axios from 'axios';
-import ImgDetails from './ImgDetails'
-import RightButton from './RightButton'
-import LeftButton from './LeftButton'
-import StoryData from './StoryData'
 import './Home.css';
-import YouTube from './YouTube'
 import './Nav.css';
-import { Switch,Route, Link, BrowserRouter as Router } from 'react-router-dom'
 import NewScene from './NewScene';
 import Scene from './Scene';
 export * from "react-router";
 
-let index=1;
 let apiCallCount = 0;
 class Home extends Component {
 
   state = {
-    id: 62,
+    id: 85,
+    prev_id: 85,
+    
   scene: {},
   isEnd: false,
   isLeft: true,
@@ -29,7 +23,7 @@ class Home extends Component {
 
   updateView = (id1) => {
     
-    console.log(this.state.id)
+    //console.log(this.state.id)
     axios({
       method: 'GET',
       url: `https://cors-anywhere.herokuapp.com/https://aaa-api.herokuapp.com/scenes/${id1}.json`
@@ -54,7 +48,7 @@ class Home extends Component {
  
   });
 
-  Next = ()=> {
+  rightChoice = ()=> {
 
     
     if(this.state.scene.right_id){
@@ -62,6 +56,7 @@ class Home extends Component {
     
       const scene =  this.state.scene
       scene.right_text = 'loading'
+      scene.left_text = 'loading'
           this.setState({
             scene: scene
           
@@ -71,7 +66,7 @@ class Home extends Component {
               id: this.state.scene.right_id
             
             })
-      console.log(this.state.id)
+      //console.log(this.state.id)
   this.callApi(this.state.scene.right_id)
     }
 
@@ -91,18 +86,19 @@ class Home extends Component {
       method: 'GET',
       url: `https://cors-anywhere.herokuapp.com/https://aaa-api.herokuapp.com/scenes/${id}.json`
     }).then(response => {
-      
+      console.log(response)
       this.setState({scene: response.data}) 
     
     }).catch(error => console.log(error));
   }
 
-  Prev =  () => {
+  leftChoice =  () => {
 
     if (this.state.scene.left_id){
    
     const scene =  this.state.scene
     scene.left_text = 'loading'
+    scene.right_text = 'loading'
         this.setState({
           scene: scene
         
@@ -126,6 +122,27 @@ this.callApi(this.state.scene.left_id)
 
 
 
+
+  }
+  
+  Back =  (id1) => {
+console.log(id1)
+    // if (this.state.scene.prev_id){
+   
+    // const scene =  this.state.scene
+  
+    //     this.setState({
+    //       scene: scene
+        
+    //     })
+          this.setState({
+            id: id1
+          
+          })
+    //console.log(this.state.id)
+this.updateView(id1)
+        
+
   }
 
   componentDidMount(){
@@ -141,7 +158,7 @@ this.callApi(this.state.scene.left_id)
     }).then(response => {
       
       this.setState({scene: response.data}) 
-      console.log(this.state.scene);
+      //console.log(this.state.scene.id);
     
     }).catch(error => console.log(error));
   }
@@ -149,9 +166,9 @@ this.callApi(this.state.scene.left_id)
 
   render() {
     if (this.state.isEnd)
-      return <NewScene isLeft={this.state.isLeft} id={this.state.newID} updateView={this.updateView}/>
+      return <NewScene isLeft={this.state.isLeft} id={this.state.scene.id} updateView={this.updateView} back={this.Back}/>
       else
-      return <Scene scene={this.state.scene} prev={this.Prev} next={this.Next}/>
+      return <Scene scene={this.state.scene} leftChoice={this.leftChoice} rightChoice={this.rightChoice} back={this.Back}/>
     
   }
 }

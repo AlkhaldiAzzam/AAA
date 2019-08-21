@@ -1,15 +1,9 @@
 
 import React, { Component } from 'react'
+import { Button , Segment} from 'semantic-ui-react';
 
-import StoryData from './StoryData'
-import Home from './Home'
 
 export default class LeftButton extends Component {
-
-
-
-
-
 
 constructor(props){
     super(props)
@@ -23,10 +17,13 @@ constructor(props){
 
     render()
      {
-console.log(this.props.prev)
         return (
             <div>
-                     <button class='ui button' onClick={this.props.prev}> {this.props.data} </button>
+                <Segment inverted>
+            <Button  color='black' fluid onClick={this.props.leftChoice}>
+            {this.props.data}
+                 </Button>
+                 </Segment>
 
             </div>
         )

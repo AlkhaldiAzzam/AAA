@@ -14,6 +14,7 @@ class AboutUs extends Component{
 //   BrowserHistory.push('/Home');
 // }
 
+
 render(){
 
     return(
@@ -61,9 +62,11 @@ render(){
       <Card.Footer>
    
  <a href="https://github.com/AlkhaldiAzzam"><i class="fa fa-github"style={{ backgroundColor: 'white', color: 'black' }}></i></a> {''}
- <a href="#"><i class="fa fa-envelope"style={{ backgroundColor: 'white', color: '#A4C0E4' }}></i></a> {''}
-  <a href="#"><i class="fa fa-phone"style={{ backgroundColor: 'white', color: 'green' }}></i></a> {''}
-  <a href="#"><i class="fa fa-linkedin"></i></a> {''}
+ <a href="mailto:...@gmail.com"><i class="fa fa-envelope"style={{ backgroundColor: 'white', color: '#A4C0E4' }}></i></a> {''}
+
+
+  {/* <a href="#"><i class="fa fa-phone"style={{ backgroundColor: 'white', color: 'green' }}></i></a> {''} */}
+  <a href="https://www.linkedin.com/in/ashwagalrouguisoftwareengineer/"><i class="fa fa-linkedin"></i></a> {''}
 
   <p><div class="black">Contact</div></p>
       </Card.Footer>
@@ -78,8 +81,8 @@ render(){
       </Card.Body>
       <Card.Footer>
       <a href="https://github.com/ASSROUGUI"><i class="fa fa-github"style={{ backgroundColor: 'white', color: 'black' }}></i></a> {''}
- <a href="#"><i class="fa fa-envelope"style={{ backgroundColor: 'white', color: '#A4C0E4' }}></i></a> {''}
-  <a href="#"><i class="fa fa-phone"style={{ backgroundColor: 'white', color: 'green' }}></i></a> {''}
+      <a href="mailto:ashwagsaudalrougui@gmail.com"><i class="fa fa-envelope"style={{ backgroundColor: 'white', color: '#A4C0E4' }}></i></a> {''}
+  {/* <a href="#"><i class="fa fa-phone"style={{ backgroundColor: 'white', color: 'green' }}></i></a> {''} */}
   <a href="#"><i class="fa fa-linkedin"></i></a> {''}
   <p><div class="black">Contact</div></p>
       </Card.Footer>
@@ -94,8 +97,8 @@ render(){
       </Card.Body>
       <Card.Footer>
       <a href="https://github.com/aaltwaim"><i class="fa fa-github"style={{ backgroundColor: 'white', color: 'black' }}></i></a> {''}
- <a href="#"><i class="fa fa-envelope"style={{ backgroundColor: 'white', color: '#A4C0E4' }}></i></a> {''}
-  <a href="#"><i class="fa fa-phone"style={{ backgroundColor: 'white', color: 'green' }}></i></a> {''}
+      <a href="mailto:...@gmail.com"><i class="fa fa-envelope"style={{ backgroundColor: 'white', color: '#A4C0E4' }}></i></a> {''}
+  {/* <a href="#"><i class="fa fa-phone"style={{ backgroundColor: 'white', color: 'green' }}></i></a> {''} */}
   <a href="#"><i class="fa fa-linkedin"></i></a> {''}
   <p><div class="black">Contact</div></p>
       </Card.Footer>

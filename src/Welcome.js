@@ -60,7 +60,7 @@ class Welcome extends Component {
 <div class= 'aduio'>
 <AudioPlayer
     autoPlay
-    hidden
+    
     src="http://goldfirestudios.com/proj/howlerjs/sound.ogg"
     // class='lll'
     // onPlay={e => console.log("onPlay")}
