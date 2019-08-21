@@ -30,8 +30,8 @@ export default function App() {
   
         <div>
             <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/Welcome" component={Welcome} />
+          <Route path="/home" component={Home} />
+          <Route exact path="/" component={Welcome} />
           <Route path="/AboutUs" component={AboutUs} />
      
           <Route component={Welcome} />

@@ -11,11 +11,11 @@ class App extends Component {
 
         <header className="header">
           <div className="header-nav">
-          <Link className="header-nav__item" to="/Welcome">Welcome</Link>
-            <Link className="header-nav__item" to="/">Home</Link>
+          <Link className="header-nav__item" to="/">Welcome</Link>
+            <Link className="header-nav__item" to="/home">Home</Link>
             <Link className="header-nav__item" to="/AboutUs">About Us</Link>
           </div>
-          <div className="github container">
+          <div className="github ">
           <a href="https://github.com/AlkhaldiAzzam/aaa"style={{  color: 'red' }}><Icon name= 'github'/></a>
           </div>
         </header>
