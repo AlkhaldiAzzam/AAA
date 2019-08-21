@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
 import CardGroup from 'react-bootstrap/CardGroup'
 import Home from './Home'
-import Home from './Home'
+
 
 import './AboutUs.css';
 // import {BrowserHistory} from 'react-router'
@@ -22,9 +22,9 @@ render(){
 <div>
 
 
-
+{/* 
 <Aduio />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/> */}
 <link
   rel="stylesheet"
   href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -71,7 +71,7 @@ render(){
     <Card>
       <Card.Img variant="top" src="holder.js/100px160" />
       <Card.Body>
-        <Card.Title>AShwag Alrougui</Card.Title>
+        <Card.Title>Ashwag Alrougui</Card.Title>
         <Card.Text>
       
         </Card.Text>

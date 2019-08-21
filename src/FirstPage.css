@@ -21,4 +21,14 @@ element.style ,.h ,button{
     text-align: center;
     /* background: white; */
     padding-left: 555px;
+    text-align: center
+}
+.g{
+margin-bottom: 55px;
+
+}
+a:hover{
+
+    /* color: brown !important; */
+    text-decoration: none !important;
 }
