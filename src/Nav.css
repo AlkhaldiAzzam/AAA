@@ -54,3 +54,14 @@ a.header__link:hover {
         padding: 10px;
     }
 }
+
+a:hover{
+    text-decoration: none!important;
+  background: #111;
+    font-size:15px;
+    color: aliceblue !important;
+  }
+  .header-nav__item {
+    text-decoration: none!important;
+
+  }

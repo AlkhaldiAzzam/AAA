@@ -11,7 +11,7 @@ class App extends Component {
 
         <header className="header">
           <div className="header-nav">
-          <Link className="header-nav__item" to="/FirstPage">FirstPage</Link>
+          <Link className="header-nav__item" to="/Welcome">Welcome</Link>
             <Link className="header-nav__item" to="/">Home</Link>
             <Link className="header-nav__item" to="/AboutUs">About Us</Link>
           </div>

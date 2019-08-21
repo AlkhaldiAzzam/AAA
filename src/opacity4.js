@@ -85,5 +85,8 @@ Fade4.defaultProps = {
   in: false,
   interval: 10000,
   delay: 17000
+  // interval: 400,
+  // delay: 10
+
 }
  export default Fade4
