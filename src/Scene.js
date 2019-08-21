@@ -22,8 +22,9 @@ export default class Scene extends Component {
           <Back back={this.props.back} id={this.props.scene.prev_id}/>
         </div>
             <div class="ui inverted segment">
+              <div className="container">
               <p>{this.props.scene.scene_text}</p>
-        
+              </div>
        
         <h4 class="ui horizontal inverted divider">
           Choose
