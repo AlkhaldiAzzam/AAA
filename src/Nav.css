@@ -57,3 +57,7 @@ a.header__link:hover {
 .github{
     padding-right: 40px;
 }
+
+a {
+    color: red;
+}
