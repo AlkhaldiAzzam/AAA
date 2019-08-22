@@ -47,11 +47,12 @@ We used react as front end and Ruby on Rails as the back end for the api. For th
 ---
 
 # Video Demo
-![](/image/video.mov)
+https://drive.google.com/file/d/1btIM3MdokzosVCm4TPNboDV3E9qXfPRA/view?usp=sharing
 
 
 
 # URL
 https://AlkhaldiAzzam.github.io/aaa
+
 
 
