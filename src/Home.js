@@ -4,14 +4,16 @@ import './Home.css';
 import './Nav.css';
 import NewScene from './NewScene';
 import Scene from './Scene';
+import { Loader ,Dimmer } from 'semantic-ui-react';
 export * from "react-router";
+
 
 let apiCallCount = 0;
 class Home extends Component {
 
   state = {
-    id: 85,
-    prev_id: 85,
+    id: 88,
+    prev_id: 88,
     
   scene: {},
   isEnd: false,
@@ -57,6 +59,8 @@ class Home extends Component {
       const scene =  this.state.scene
       scene.right_text = 'loading'
       scene.left_text = 'loading'
+      scene.scene_text = <Dimmer active><Loader /></Dimmer>
+
           this.setState({
             scene: scene
           
@@ -99,6 +103,8 @@ class Home extends Component {
     const scene =  this.state.scene
     scene.left_text = 'loading'
     scene.right_text = 'loading'
+    scene.scene_text = <Dimmer active><Loader /></Dimmer>
+
         this.setState({
           scene: scene
         
@@ -147,8 +153,9 @@ this.updateView(id1)
 
   componentDidMount(){
     const scene =  this.state.scene
-    scene.right_text = 'loading'
-    scene.left_text = 'loading'
+    scene.right_text = <Dimmer active><Loader /></Dimmer>
+    scene.left_text = <Dimmer active><Loader /></Dimmer>
+    scene.scene_text = <Dimmer active><Loader /></Dimmer>
         this.setState({
           scene: scene
         }) 
