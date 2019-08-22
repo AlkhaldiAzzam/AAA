@@ -80,8 +80,8 @@ export default class NewScene extends Component {
     render() {
         return (
             <div class ='center'>
+                <p style={{"color": "red"}}>Please be carefull about your text, you cant change it afterwards</p>
             
-      
             <div class="ui inverted segment">
                 <div style={{"paddingRight": "40%"}}>
             <p style={{"font-size": "30px"}}>The story ends here...</p>
