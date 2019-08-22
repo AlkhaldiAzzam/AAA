@@ -47,7 +47,6 @@ We used react as front end and Ruby on Rails as the back end for the api. For th
 ---
 
 # Video Demo
-[websites that helped with this project]
 ![](/image/video.mov)
 
 
